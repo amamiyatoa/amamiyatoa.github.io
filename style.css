@@ -1,0 +1,177 @@
+@media screen and (min-width : 1024px) {
+    
+    body {
+        background-color: white;
+        -webkit-text-size-adjust: none;
+    }
+
+    /*/////*/
+    /*ヘッダー要素の設定*/
+    /*/////*/
+    .top {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .header_wrap {
+        display: block;
+        border-bottom: solid #555;
+        margin: 0 auto;
+    }
+    .header_position {
+        align-content: center;
+        margin: 0 auto;
+    }
+    .icon {
+        width: 200px;
+        padding: 15px 0px 0px 15px ;
+    }
+
+    /*/////*/
+    /*メニューバーの設定*/
+    /*/////*/
+    /*メニューバー背景*/
+    .menu_wrap {
+        display: block;
+        background-color: #68e8ff;
+    }
+    /*各メニューの設定*/
+    ul.menu {
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;
+        background-color: #68e8ff;
+        display: flex;
+        justify-content: center;
+    }
+    /*各メニューのサイズとリスト形式の非表示*/
+    ul.menu li {
+        width: 175px;
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+    }
+    /*文字色と大文字とリンク形式の非表示*/
+    ul.menu a {
+        background-color: #68e8ff;
+        color: black;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        border: solid #68e8ff;
+    }
+    /*メニューにマウスカーソルを合わせたときのカラー変更(class="y"が付与されている物を除く)*/
+    ul.menu a:hover:not(.y) {
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    /*aタグにclass="y"が付いている物にボーダーとradiusの追加*/
+    li a.y {
+        border: solid rgba(0, 0, 255, 0);
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    ul.menu ul {
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        background-color: #68e8ff;
+    }
+    ul.menu li:hover ul {
+        display: block;
+    }
+
+}
+/*レスポンシブ化(phone)*/
+@media screen and (min-width:375px) and (max-width:480px) {
+    
+    body {
+        background-color: white;
+        -webkit-text-size-adjust: none;
+    }
+
+    /*/////*/
+    /*ヘッダー要素の設定*/
+    /*/////*/
+    .top {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .header_wrap {
+        display: block;
+        border-bottom: solid #555;
+        margin: 0 auto;
+    }
+    .header_position {
+        align-content: center;
+        margin: 0 auto;
+    }
+    .icon {
+        width: 150px;
+        padding: 10px 0px 0px 10px;
+    }
+
+    /*/////*/
+    /*メニューバーの設定*/
+    /*/////*/
+    /*メニューバー背景*/
+    .menu_wrap {
+        display: block;
+        background-color: #68e8ff;
+    }
+    /*各メニューの設定*/
+    ul.menu {
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;
+        background-color: #68e8ff;
+        display: flex;
+        justify-content: center;
+    }
+    /*各メニューのサイズとリスト形式の非表示*/
+    ul.menu li {
+        width: 100px;
+        display: inline-block;
+        list-style-type: none;
+        position: relative;
+    }
+    /*文字色と大文字とリンク形式の非表示*/
+    ul.menu a {
+        background-color: #68e8ff;
+        color: black;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: block;
+        border: solid #68e8ff;
+    }
+    /*メニューにマウスカーソルを合わせたときのカラー変更(class="y"が付与されている物を除く)*/
+    ul.menu a:hover:not(.y) {
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    /*aタグにclass="y"が付いている物にボーダーとradiusの追加*/
+    li a.y {
+        border: solid rgba(0, 0, 255, 0);
+        border-radius: 50px;
+        background-color: rgba(0, 0, 255, 0.5);
+        color: white;
+    }
+    ul.menu ul {
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        background-color: #68e8ff;
+    }
+    ul.menu li:hover ul {
+        display: block;
+    }
+
+}
