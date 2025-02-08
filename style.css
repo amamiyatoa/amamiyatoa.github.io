@@ -85,7 +85,23 @@
         display: block;
     }
 
+    .content{
+        padding: 50px 3%;
+    }
+
+    .content h2 {
+        margin: 0 auto;
+        padding: 0px 30px;
+        font-size: 35px;
+        width: fit-content;
+        color: #8d8d8d;
+        font-weight: bold;
+        border-left: solid #5c5c5c;
+        border-right: solid #5c5c5c;
+    }
+
 }
+
 /*レスポンシブ化(phone)*/
 @media screen and (min-width:375px) and (max-width:480px) {
     
