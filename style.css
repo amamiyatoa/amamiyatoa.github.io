@@ -105,7 +105,7 @@
         margin-bottom: 30px;
     }
 
-    section.whiteblock {
+    .whiteblock {
         margin: 0 auto;
         max-width: 1000px;
         overflow: hidden;
@@ -114,16 +114,16 @@
         border: solid #f3f3f3;
         border-radius: 30px;
     }
-    section.contents {
+    .contents {
         text-align: left;
         color: black;
     }
-    section.contents dl {
+    .contents dl {
         height: 140px;
         overflow: auto;
         margin: 0 auto;
     }
-    section.contents dt {
+    .contents dt {
         float: left;
         width: 9em;
         padding-left: 1.3em;
