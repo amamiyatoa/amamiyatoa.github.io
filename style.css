@@ -128,7 +128,7 @@
         width: 9em;
         padding-left: 1.3em;
     }
-    contents dd {
+    .contents dd {
         padding-left: 10em;
     }
 
