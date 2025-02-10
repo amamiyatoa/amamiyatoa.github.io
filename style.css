@@ -146,7 +146,7 @@
     /*ヘッダー要素の設定*/
     /*/////*/
     .top {
-        max-width: 1400px;
+        max-width: 480px;
         margin: 0 auto;
     }
     .header_wrap {
@@ -236,6 +236,34 @@
         font-weight: bold;
         border-left: solid #5c5c5c;
         border-right: solid #5c5c5c;
+    }
+
+    .whiteblock {
+        margin: 0 auto;
+        max-width: 350px;
+        overflow: hidden;
+        position: relative;
+        background-color: #f3f3f3;
+        border: solid #f3f3f3;
+        border-radius: 30px;
+    }
+    .contents {
+        text-align: left;
+        font-size: 13px;
+        color: black;
+    }
+    .contents dl {
+        height: 100px;
+        overflow: auto;
+        margin: 0 auto;
+    }
+    .contents dt {
+        float: left;
+        width: 9em;
+        padding-left: 1.3em;
+    }
+    .contents dd {
+        padding-left: 10em;
     }
 
 }
