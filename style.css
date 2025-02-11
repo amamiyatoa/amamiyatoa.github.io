@@ -94,7 +94,7 @@
 
     .content h2 {
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 50px;
         padding: 0px 30px;
         font-size: 35px;
         width: fit-content;
@@ -149,7 +149,7 @@
 }
 
 /*レスポンシブ化(phone)*/
-@media screen and (min-width:375px) and (max-width:480px) {
+@media screen and (max-width:480px) {
     
     body {
         background-color: white;
@@ -242,7 +242,7 @@
 
     .content h2 {
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 50px;
         padding: 0px 30px;
         font-size: 25px;
         width: fit-content;
@@ -250,6 +250,7 @@
         font-weight: bold;
         border-left: solid #5c5c5c;
         border-right: solid #5c5c5c;
+        margin-bottom: 20px;
     }
 
     .whiteblock {
@@ -278,6 +279,20 @@
     }
     .contents dd {
         padding-left: 10em;
+    }
+
+    .profile {
+        color: black;
+    }
+    .profile_pic {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    .profile p {
+        text-align: center;
     }
 
 }
