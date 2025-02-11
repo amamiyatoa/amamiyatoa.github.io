@@ -132,6 +132,20 @@
         padding-left: 10em;
     }
 
+    .profile {
+        color: black;
+    }
+    .profile_pic {
+        display: block;
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+    .profile p {
+        text-align: center;
+    }
+
 }
 
 /*レスポンシブ化(phone)*/
