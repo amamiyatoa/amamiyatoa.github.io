@@ -145,6 +145,28 @@
     .profile p {
         text-align: center;
     }
+    .activity {
+        color: black;
+    }
+    .activity p {
+        text-align: center;
+    }
+
+
+
+    .comingsoon {
+        color: black;
+    }
+    .comingsoon p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+    }
 
 }
 
@@ -292,7 +314,30 @@
         object-fit: cover;
     }
     .profile p {
+        text-align: left;
+    }
+    .activity {
+        color: black;
+    }
+    .activity p {
         text-align: center;
+    }
+
+
+
+    .comingsoon {
+        color: black;
+    }
+    .comingsoon p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+        font-size: 10px;
     }
 
 }
