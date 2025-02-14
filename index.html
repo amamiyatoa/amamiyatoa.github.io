@@ -26,6 +26,16 @@
             <div class="header_wrap">
                 <div class="header_position">
                     <a href="index.html"><img src="./files/favicon.png" alt="雨宮とあ" class="icon"></a>
+                    <div class="clock" style="font-size: 20px; margin: 0 auto; font-weight: bold;"></div>
+                    <script>
+                        const date = new Date();
+                        const hour = date.getHours();
+                        const minute =  date.getMinutes();
+                        const second = date.getSeconds();
+                        const currentTime = `${hour}:${minute}:${second}`;
+                        document.querySelector('.clock').textContent = currentTime;
+                    </script>
+                    <img src="/cgi-bin/Count.cgi?df=sample">
                 </div>
                 <div class="menu_wrap">
                     <div class="menubar">

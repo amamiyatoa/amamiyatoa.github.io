@@ -18,8 +18,11 @@
         margin: 0 auto;
     }
     .header_position {
-        align-content: center;
+        display: flex;
+        align-items: center;
         margin: 0 auto;
+        color: black;
+        position: relative;
     }
     .icon {
         width: 200px;
@@ -200,8 +203,11 @@
         margin: 0 auto;
     }
     .header_position {
-        align-content: center;
+        display: flex;
         margin: 0 auto;
+        color: black;
+        position: relative;
+        align-items: center;
     }
     .icon {
         width: 150px;
