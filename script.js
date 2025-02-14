@@ -6,7 +6,7 @@ function displayTime() {
     const minute =  date.getMinutes();
     const second = date.getSeconds();
     const year = date.getFullYear();
-    const currentTime = `${year}/${month}/${day}/${hour}/${minute}/${second}`;
+    const currentTime = `${year}/${month}/${day}/${hour}:${minute}:${second}`;
     document.querySelector('.clock').textContent = currentTime;
 }
 setInterval(
