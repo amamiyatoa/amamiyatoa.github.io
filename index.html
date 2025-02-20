@@ -27,22 +27,11 @@
                 <div class="header_position">
                     <a href="index.html"><img src="./files/favicon.png" alt="雨宮とあ" class="icon"></a>
                     <div class="clock" style="font-size: 20px; margin: 0 auto; font-weight: bold;"></div>
-                    <script>
-                        const date = new Date();
-                        const month = date.getMonth();
-                        const day =  date.getDate();
-                        const hour = date.getHours();
-                        const minute =  date.getMinutes();
-                        const second = date.getSeconds();
-                        const year = date.getFullYear();
-                        const currentTime = `${year}/${month}/${day}/${hour}:${minute}:${second}`;
-                        document.querySelector('.clock').textContent = currentTime;
-                    </script>
                 </div>
-                <div class="menu_wrap">
+                <div id="menu_wrap">
                     <div class="menubar">
-                        <ul class="menu">
-                            <li><a href="#" class="y">ホーム</a></li>
+                        <ul id="menu">
+                            <li><a href="#" id="y">ホーム</a></li>
                             <li><a href="#">ソーシャル</a>
                                 <ul>
                                     <li><a href="https://x.com/amamiyatoa" target="_blank">Twitter</a></li>
@@ -68,6 +57,8 @@
                     <section class="whiteblock">
                             <section class="contents">
                                 <dl>
+                                    <dt>25年2月20日</dt>
+                                    <dd>JavaScript導入</dd>
                                     <dt>25年2月14日</dt>
                                     <dd>本公開</dd>
                                     <dt>25年2月8日</dt>

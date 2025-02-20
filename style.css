@@ -33,12 +33,12 @@
     /*メニューバーの設定*/
     /*/////*/
     /*メニューバー背景*/
-    .menu_wrap {
+    #menu_wrap {
         display: block;
         background-color: #68e8ff;
     }
     /*各メニューの設定*/
-    ul.menu {
+    ul#menu {
         margin: 0 auto;
         padding: 0px 0px 0px 0px;
         background-color: #68e8ff;
@@ -46,14 +46,14 @@
         justify-content: center;
     }
     /*各メニューのサイズとリスト形式の非表示*/
-    ul.menu li {
+    ul#menu li {
         width: 175px;
         display: inline-block;
         list-style-type: none;
         position: relative;
     }
     /*文字色と大文字とリンク形式の非表示*/
-    ul.menu a {
+    ul#menu a {
         background-color: #68e8ff;
         color: black;
         line-height: 50px;
@@ -63,30 +63,37 @@
         display: block;
         border: solid #68e8ff;
     }
-    /*メニューにマウスカーソルを合わせたときのカラー変更(class="y"が付与されている物を除く)*/
-    ul.menu a:hover:not(.y) {
-        border: solid rgba(0, 0, 255, 0);;
-        border-radius: 50px;
-        background-color: rgba(0, 0, 255, 0.5);
-        color: white;
-    }
-    /*aタグにclass="y"が付いている物にボーダーとradiusの追加*/
-    li a.y {
+    /*メニューにマウスカーソルを合わせたときのカラー変更(id="y"が付与されている物を除く)*/
+    /*aタグにid="y"が付いている物にボーダーとradiusの追加*/
+    li a#y {
         border: solid rgba(0, 0, 255, 0);
         border-radius: 50px;
         background-color: rgba(0, 0, 255, 0.5);
         color: white;
     }
-    ul.menu ul {
-        display: none;
+    ul#menu ul {
+        visibility: hidden;
+        opacity: 0;
         margin: 0px;
         padding: 0px;
         position: absolute;
         background-color: #68e8ff;
     }
-    ul.menu li:hover ul {
-        display: block;
+
+
+    ul#menu.fadein_active li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
     }
+    ul#menu.fadein_active li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.35s ease-in-out;
+    }
+
 
     .main {
         margin: 0 auto;
@@ -218,12 +225,12 @@
     /*メニューバーの設定*/
     /*/////*/
     /*メニューバー背景*/
-    .menu_wrap {
+    #menu_wrap {
         display: block;
         background-color: #68e8ff;
     }
     /*各メニューの設定*/
-    ul.menu {
+    ul#menu {
         margin: 0 auto;
         padding: 0px 0px 0px 0px;
         background-color: #68e8ff;
@@ -231,14 +238,14 @@
         justify-content: center;
     }
     /*各メニューのサイズとリスト形式の非表示*/
-    ul.menu li {
+    ul#menu li {
         width: 100px;
         display: inline-block;
         list-style-type: none;
         position: relative;
     }
     /*文字色と大文字とリンク形式の非表示*/
-    ul.menu a {
+    ul#menu a {
         background-color: #68e8ff;
         color: black;
         line-height: 30px;
@@ -249,29 +256,42 @@
         border: solid #68e8ff;
     }
     /*メニューにマウスカーソルを合わせたときのカラー変更(class="y"が付与されている物を除く)*/
-    ul.menu a:hover:not(.y) {
+    ul#menu a:hover:not(#y) {
         border: solid rgba(0, 0, 255, 0);;
         border-radius: 50px;
         background-color: rgba(0, 0, 255, 0.5);
         color: white;
     }
     /*aタグにclass="y"が付いている物にボーダーとradiusの追加*/
-    li a.y {
+    li a#y {
         border: solid rgba(0, 0, 255, 0);
         border-radius: 50px;
         background-color: rgba(0, 0, 255, 0.5);
         color: white;
     }
-    ul.menu ul {
-        display: none;
+    ul#menu ul {
+        visibility: hidden;
+        opacity: 0;
         margin: 0px;
         padding: 0px;
         position: absolute;
         background-color: #68e8ff;
     }
-    ul.menu li:hover ul {
-        display: block;
+
+
+    ul#menu.fadein_active li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
     }
+    ul#menu.fadein_active li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.35s ease-in-out;
+    }
+
 
     .content{
         padding: 20px 3%;
