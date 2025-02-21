@@ -1,3 +1,13 @@
+body {
+    visibility: hidden;
+    opacity: 0;
+}
+body.fadein_active {
+    visibility: visible;
+    opacity: 1;
+    transition: 1.2s ease-in-out;
+}
+
 @media screen and (min-width : 1024px) {
     
     body {
@@ -80,6 +90,14 @@
         background-color: #68e8ff;
     }
 
+
+    ul#menu.fadein_first li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
+    }
 
     ul#menu.fadein_active li a:hover {
         background-color: rgba(0, 0, 255, 0.5);
@@ -279,6 +297,14 @@
     }
 
 
+    ul#menu.fadein_first li a:hover {
+        background-color: rgba(0, 0, 255, 0.5);
+        border: solid rgba(0, 0, 255, 0);;
+        border-radius: 50px;
+        color: white;
+        transition: background-color 0.35s ease-in-out;
+    }
+
     ul#menu.fadein_active li a:hover {
         background-color: rgba(0, 0, 255, 0.5);
         border: solid rgba(0, 0, 255, 0);;
@@ -331,7 +357,7 @@
     }
     .contents dt {
         float: left;
-        width: 9em;
+        max-width: 9em;
         padding-left: 1.3em;
     }
     .contents dd {

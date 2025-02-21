@@ -1,4 +1,5 @@
 window.onload = function() {
+    document.body.classList.add('fadein_active')
     //フェードイン導入JavaScript//
     let fade_menu = document.getElementById('menu');
     fade_menu.addEventListener('mouseover', function() {
