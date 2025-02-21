@@ -38,6 +38,10 @@ body.fadein_active {
         width: 200px;
         padding: 15px 0px 0px 15px ;
     }
+    .github_left {
+        display: inline;
+        margin: 0 0 0 auto;
+    }
 
     /*/////*/
     /*メニューバーの設定*/
@@ -237,6 +241,10 @@ body.fadein_active {
     .icon {
         width: 150px;
         padding: 10px 0px 0px 10px;
+    }
+    .github_left {
+        display: inline;
+        margin: 0 0 0 auto;
     }
 
     /*/////*/
